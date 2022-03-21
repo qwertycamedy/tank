@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include("partials/head.html")
+
+<body class="page__body">
+  <div class="site-container">
+    @include("partials/header-logged.html")
+
+    <main class="main">
+      @include("partials/to-main.html")
+
+      <section class="tank-acc acc-thr">
+        <div class="container">
+          <div class="tank-acc__inner">
+            <div class="tank-acc__top">
+              <div class="tank-acc__info">
+                <div class="tank-acc__title-outer">
+                  <h1 class="tank-acc__title twenty-four">
+                    Аккаунт от 6 до 10 топов
+                  </h1>
+                  <div class="tank-acc__title-descr">
+                    <svg class="icon-24">
+                      <use xlink:href="img/sprite.svg#question"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="tank-acc__btn-portion">
+                  <button class="tank-acc__btn btn-reset blue-btn">
+                    <svg class="icon-24">
+                      <use xlink:href="img/sprite.svg#cart"></use>
+                    </svg>
+                    Открыть за 99₽
+                  </button>
+                  <div class="tank-acc__portion-outer">
+                    <button class="tank-acc__portion btn-reset top-btn transparent-btn active">
+                      +10%
+                    </button>
+                    <button class="tank-acc__portion btn-reset top-btn transparent-btn">
+                      +20%
+                    </button>
+                    <button class="tank-acc__portion btn-reset top-btn transparent-btn">
+                      +30%
+                    </button>
+                    <button class="tank-acc__portion btn-reset bottom-btn transparent-btn active">
+                      ×1
+                    </button>
+                    <button class="tank-acc__portion btn-reset bottom-btn transparent-btn">
+                      ×2
+                    </button>
+                    <button class="tank-acc__portion btn-reset bottom-btn transparent-btn">
+                      ×3
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="tank-acc__img-outer">
+                <img src="img/tank-acc.webp" alt="img">
+              </div>
+            </div>
+            <div class="tank-acc__bottom">
+              <div class="tank-acc__descr">
+                <h5 class="tank-acc__bottom-title twenty-two">О товаре</h5>
+                <div class="tank-acc__descr-outer">
+                  <div class="tank-acc__descr-inner">
+                    <p class="tank-acc__name">
+                      Количество топов
+                    </p>
+                    <p class="tank-acc__text">
+                      10
+                    </p>
+                  </div>
+                  <div class="tank-acc__descr-inner">
+                    <p class="tank-acc__name">
+                      Премиум танков
+                    </p>
+                    <p class="tank-acc__text">
+                      2 Premium танка
+                    </p>
+                  </div>
+                  <div class="tank-acc__descr-inner">
+                    <p class="tank-acc__name">
+                      Количество  cеребра
+                    </p>
+                    <p class="tank-acc__text">
+                      4 00 000
+                    </p>
+                  </div>
+                  <div class="tank-acc__descr-inner">
+                    <p class="tank-acc__name">
+                      Количество голды
+                    </p>
+                    <p class="tank-acc__text">
+                      15 000
+                    </p>
+                  </div>
+                  <div class="tank-acc__descr-inner">
+                    <p class="tank-acc__name">
+                      Последний бой
+                    </p>
+                    <p class="tank-acc__text">
+                      01.02.12 (отлега год)
+                    </p>
+                  </div>
+                  <div class="tank-acc__descr-inner">
+                    <p class="tank-acc__name">
+                      Доступ
+                    </p>
+                    <p class="tank-acc__text">
+                      Игра + Сайт + WG
+                    </p>
+                  </div>
+                  <div class="tank-acc__descr-inner">
+                    <p class="tank-acc__name">
+                      Привязка
+                    </p>
+                    <p class="tank-acc__text">
+                      Не проверялась
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      @include("partials/tank-char.html")
+    </main>
+
+    @include("partials/footer.html")
+    @include("partials/modals.html")
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+.ind-acc {
+  &__title {
+    margin-bottom: 35px;
+  }
+
+  &__card {
+    &-outer {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 37px 10px;
+    }
+
+    max-width: 310px;
+    width: 100%;
+    background: #141b2d;
+    padding-top: 10px;
+
+
+    &-title {
+      padding-left: 23px;
+      padding-bottom: 14px;
+      color: var(--alto);
+    }
+  }
+
+  &__more {
+    display: none;
+    margin: 20px auto 0;
+  }
+
+  &__sale {
+    color: var(--black-pearl);
+    padding: 3px 38px 3px 23px;
+    background: var(--red-grad);
+    max-width: 102px;
+    clip-path: polygon(0 0, 100% 0%, 90% 100%, 0% 100%);
+    margin-bottom: 15px;
+  }
+
+  &__price-link {
+    display: flex;
+    justify-content: space-between;
+    background: #070F23;
+    align-items: center;
+    padding-left: 23px;
+  }
+
+  &__price {
+    color: transparent;
+    background: linear-gradient(155.76deg, #1C4FD6 -19.24%, #0697E9 128.17%);
+    background-clip: text;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    & .sale {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 21px;
+      color: var(--trout);
+      text-decoration: line-through;
+    }
+  }
+
+  &__link {
+    clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%);
+    padding: 12px 38px 12px 44px;
+  }
+
+  &__info {
+    padding: 16px 20px 25px 23px;
+  }
+
+  &__name {
+    color: var(--trout);
+    margin-bottom: 5px;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+  }
+
+  &__descr {
+
+  }
+}
+
+.random-acc {
+  &__card {
+    padding-bottom: 39px;
+    position: relative;
+  }
+  &__sale {
+    position: absolute;
+    left: 0;
+    top: 10px;
+  }
+  &__title {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 41px;
+    padding-top: 75px;
+    padding-left: 0;
+    font-weight: 500;
+    color: var(--alto);
+  }
+}

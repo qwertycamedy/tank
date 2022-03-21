@@ -1,0 +1,45 @@
+.tab {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  &__btn {
+    width: 167px;
+    color: var(--black-pearl);
+    &:before {
+      background: #4C5462;
+    }
+    &:hover {
+      &:before {
+        background: #656D7B;
+      }
+    }
+    &.active {
+      pointer-events: none;
+      color: #fff;
+
+      &:before {
+        background: var(--blue-grad);
+      }
+    }
+
+    &:first-child {
+      margin-right: -8px;
+    }
+    &-outer {
+      display: flex;
+      margin: 0 auto;
+      justify-content: center;
+    }
+
+
+  }
+
+  &__content {
+    flex-direction: column;
+    gap: 100px;
+    display: none;
+    &.active {
+      display: flex;
+    }
+  }
+}

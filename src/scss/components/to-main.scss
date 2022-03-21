@@ -1,0 +1,36 @@
+.to-main {
+  &__outer {
+    margin-bottom: 30px;
+  }
+  color: var(--trout);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  max-width: max-content;
+  position: relative;
+  transition: .3s linear;
+  &:before {
+    height: 1px;
+    width: 47px;
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background: #0697E9;;
+    opacity: 0;
+    transition: .3s linear;
+  }
+  & svg {
+    transition: .3s linear;
+    fill: var(--trout);
+  }
+  &:hover {
+    color: #0697E9;
+    &:before {
+      opacity: 1;
+    }
+    & svg {
+      fill: #0697E9;
+    }
+  }
+}

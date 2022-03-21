@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include("partials/head.html")
+
+<body class="page__body">
+  <div class="site-container">
+    @include("partials/header-logged.html")
+
+    <main class="main">
+      @include("partials/hero.html")
+      <div class="tab">
+        <div class="tab__btn-outer">
+          <button class="tab__btn btn-reset blue-btn" data-tab="#contentOne">
+            Аккаунты
+          </button>
+          <button class="tab__btn btn-reset blue-btn" data-tab="#contentTwo">
+            Кейсы
+          </button>
+        </div>
+        <div class="tab__content-outer">
+          <div class="tab__content" id="contentOne">
+            @include("partials/ind-acc.html")
+            @include("partials/random-acc.html")
+            @include("partials/random-top.html")
+          </div>
+          <div class="tab__content" id="contentTwo">
+            @include("partials/cases.html")
+          </div>
+        </div>
+      </div>
+    </main>
+
+    @include("partials/footer.html")
+    @include("partials/modals.html")
+  </div>
+</body>
+
+</html>

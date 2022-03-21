@@ -1,0 +1,22 @@
+// если вы хотите использовать sass-переменные - удалите root
+// colors
+:root {
+  // base
+
+  --ff: "Commissioner", sans-serif;
+  --content-width: 1280px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  //colors
+  --alto: #D1D1D1;
+  --bali-hai: #8A9FB4;
+  --trout: #4C5462;
+  --black-pearl: #070F23;
+  --mirage: #141B2D;
+  --denim: #2358e9;
+  --green: #04F289;
+
+  --blue-grad: linear-gradient(155.76deg, #1C4FD6 -19.24%, #0697E9 128.17%);
+  --red-grad: linear-gradient(92.52deg, #F9734F 1.11%, #FB4057 104.36%);
+}

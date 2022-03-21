@@ -1,0 +1,29 @@
+// базовые подключения
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+
+// подключения компонентов страницы
+@import "./components/header";
+@import "./components/hero";
+@import "./components/tab";
+@import "./components/ind-acc";
+@import "./components/cases";
+
+@import "./components/to-main";
+@import "./components/acc-info";
+@import "./components/inventory";
+@import "./components/my-acc";
+
+@import "./components/tank-acc";
+@import "./components/tank-char";
+
+@import "./components/sup-banner";
+@import "./components/tech-sup";
+
+@import "./components/footer";
+@import "./components/modals";
+@import "./components/other-el";
+
+@import "./components/media";

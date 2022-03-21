@@ -1,0 +1,150 @@
+.acc-info {
+  padding: 54px 0;
+  background: #141B2D;
+  margin-bottom: 40px;
+
+  &__inner {
+    padding-left: 31px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__photo-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__photo {
+    &-outer {
+      border-radius: 50%;
+      position: relative;
+      width: 83px;
+      height: 86px;
+      padding: 2px;
+      border: 1px solid #06A2FF;
+
+      & img {
+        border-radius: 50%;
+        width: 77px;
+        height: 77px;
+      }
+    }
+  }
+
+  &__log-method {
+    & img {
+      width: 30px;
+      height: 30px;
+    }
+
+    border-radius: 50%;
+    overflow: hidden;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 100%;
+
+  }
+
+  &__name {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 150%;
+    color: var(--alto);
+    margin-bottom: 2px;
+  }
+
+  &__edit {
+    width: 30px;
+    height: 30px;
+
+    & svg {
+      width: inherit;
+      height: inherit;
+      fill: #2055e7;
+      transition: .3s linear;
+    }
+
+    &:hover {
+      & svg {
+        fill: #fff;
+      }
+    }
+  }
+
+  &__mail {
+    color: var(--bali-hai)
+  }
+
+  &__actions {
+    display: flex;
+    gap: 44px;
+    position: relative;
+  }
+
+  &__btn {
+    &-outer {
+      display: flex;
+      align-items: center;
+    }
+
+    width: 178px;
+  }
+
+  &__sum {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: -20px;
+    gap: 5px;
+    height: 100%;
+    clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
+    background: var(--black-pearl);
+    width: 160px;
+  }
+
+  &__story {
+    max-width: max-content;
+    right: 0;
+    bottom: calc(100% + 18px);
+    height: max-content;
+    position: absolute;
+    color: var(--trout);
+
+    &.disabled {
+      pointer-events: none;
+      &:before {
+        background: var(--trout);
+      }
+    }
+
+    &:before {
+      width: 100%;
+      height: 1px;
+      background: var(--blue-grad);
+      top: 100%;
+      left: 0;
+      content: '';
+      position: absolute;
+      opacity: 1;
+      transition: .3s linear;
+    }
+
+    &:hover {
+      color: transparent;
+      background: var(--blue-grad);
+      background-clip: text;
+
+      &:before {
+        opacity: 0;
+      }
+    }
+  }
+}

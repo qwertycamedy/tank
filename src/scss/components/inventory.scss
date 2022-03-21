@@ -1,0 +1,52 @@
+.inventory {
+  margin-bottom: 100px;
+  &__title {
+    margin-bottom: 35px;
+  }
+
+  &__card {
+    &-outer {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    max-width: 205px;
+    padding-bottom: 10px;
+    width: 100%;
+    background: #141b2d;
+  }
+
+  &__img-outer {
+    margin-bottom: 24px;
+    max-width: 206px;
+    position: relative;
+    z-index: 1;
+    &:before {
+      background: radial-gradient(50% 50% at 50% 50%, rgba(40, 87, 209, 0.7) 0%, rgba(40, 87, 209, 0) 100%);
+      width: 115.45px;
+      height: 115.45px;
+      content: '';
+      position: absolute;
+      right: 5px;
+      top: 0px;
+      z-index: -1;
+    }
+  }
+
+  &__name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 10px;
+    color: var(--alto);
+    background: #070F23;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+  }
+
+  &__more {
+    margin: 40px auto 0;
+  }
+}

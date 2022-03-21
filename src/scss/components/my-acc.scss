@@ -1,0 +1,75 @@
+.my-acc {
+  &__title {
+    margin-bottom: 35px;
+  }
+
+  &__card {
+    &-outer {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    max-width: 205px;
+    padding: 25px 20px;
+    width: 100%;
+    background: #141b2d;
+
+    &-title {
+      color: var(--alto);
+      margin-bottom: 10px;
+    }
+
+    &-data {
+      &-outer {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        margin-bottom: 10px;
+      }
+
+      &-name {
+        font-size: 14px;
+        line-height: 21px;
+        color: var(--trout);
+      }
+
+      &-info {}
+    }
+
+    &-link {
+      position: relative;
+      max-width: max-content;
+      height: max-content;
+      color: #fff;
+      font-weight: 600;
+
+
+      &:before {
+        width: 100%;
+        height: 1px;
+        background: var(--blue-grad);
+        top: calc(100% + 1px);
+        left: 0;
+        content: '';
+        position: absolute;
+        opacity: 1;
+        transition: .3s linear;
+      }
+
+      &:hover {
+        color: transparent;
+        background: var(--blue-grad);
+        background-clip: text;
+
+        &:before {
+          opacity: 0;
+        }
+      }
+    }
+  }
+
+  &__more {
+    margin: 40px auto 0;
+  }
+}

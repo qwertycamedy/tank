@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include("partials/head.html")
+
+<body class="page__body">
+  <div class="site-container">
+    @include("partials/header.html")
+
+    <main class="main">
+      @include("partials/to-main.html")
+
+      <section class="tank-acc">
+        <div class="container">
+          <div class="tank-acc__inner">
+            <div class="tank-acc__top">
+              <div class="tank-acc__info">
+                <div class="tank-acc__title-outer">
+                  <h1 class="tank-acc__title twenty-four">
+                    Аккаунт от 10 000 до 50 000
+                  </h1>
+                  <div class="tank-acc__title-descr">
+                    <svg class="icon-24">
+                      <use xlink:href="img/sprite.svg#question"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="tank-acc__btn-portion">
+                  <button class="tank-acc__btn btn-reset blue-btn">
+                    <svg class="icon-24">
+                      <use xlink:href="img/sprite.svg#cart"></use>
+                    </svg>
+                    Открыть за 99₽
+                  </button>
+                  <div class="tank-acc__portion-outer">
+                    <button class="tank-acc__portion btn-reset top-btn transparent-btn active">
+                      +10%
+                    </button>
+                    <button class="tank-acc__portion btn-reset top-btn transparent-btn">
+                      +20%
+                    </button>
+                    <button class="tank-acc__portion btn-reset top-btn transparent-btn">
+                      +30%
+                    </button>
+                    <button class="tank-acc__portion btn-reset bottom-btn transparent-btn active">
+                      ×1
+                    </button>
+                    <button class="tank-acc__portion btn-reset bottom-btn transparent-btn">
+                      ×2
+                    </button>
+                    <button class="tank-acc__portion btn-reset bottom-btn transparent-btn">
+                      ×3
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="tank-acc__img-outer">
+                <img src="img/tank-acc.webp" alt="img">
+              </div>
+            </div>
+            <div class="tank-acc__bottom">
+              <div class="tank-acc__descr">
+                <h5 class="tank-acc__bottom-title twenty-two">О товаре</h5>
+                <div class="tank-acc__descr-outer">
+                  <div class="tank-acc__descr-inner">
+                    <p class="tank-acc__name">
+                      Количество боев
+                    </p>
+                    <p class="tank-acc__text">
+                      от 10 000 до 15 000
+                    </p>
+                  </div>
+                  <div class="tank-acc__descr-inner">
+                    <p class="tank-acc__name">
+                      Ссылка на профиль
+                    </p>
+                    <a class="tank-acc__descr-link" href="#">
+                      Перейти
+                      <svg class="icon-24">
+                        <use xlink:href="img/sprite.svg#link-arrow"></use>
+                      </svg>
+                    </a>
+                  </div>
+                  <div class="tank-acc__descr-inner">
+                    <p class="tank-acc__name">
+                      Доступ
+                    </p>
+                    <p class="tank-acc__text">
+                      Полный доступ к почте и к аккаунту на сайте Wargaming
+                    </p>
+                  </div>
+                  <div class="tank-acc__descr-inner">
+                    <p class="tank-acc__name">
+                      Привязка
+                    </p>
+                    <p class="tank-acc__text">
+                      Без привязки на сайте WG, сможете спокойно
+                      привязать аккаунт на свой телефон!
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="tank-acc__recovery">
+                <h5 class="tank-acc__bottom-title twenty-two">
+                  <span class="desc">Инструкция по восстановлению аккаунта</span>
+                  <span class="smart">
+                    Инструкция<br>по восстановлению аккаунта
+                  </span>
+                </h5>
+                <ul class="tank-acc__recovery-list list-reset">
+                  <li class="tank-acc__recovery-list-item">
+                    <p class="tank-acc__text">
+                      Заходите на почту
+                    </p>
+                  </li>
+                  <li class="tank-acc__recovery-list-item">
+                    <p class="tank-acc__text">
+                      Перейдите по этой ссылке: <a class="tank-acc__text-link"
+                        href="ru.wargaming.net/personal/password_reset/new"
+                        target="_blank">ru.wargaming.net/personal/password_reset/new </a> и нажмите восстановить пароль
+                    </p>
+                  </li>
+                  <li class="tank-acc__recovery-list-item">
+                    <p class="tank-acc__text">
+                      На почту придет сообщение, с помощью которого вы сможете изменить пароль на аккаунте
+                    </p>
+                  </li>
+                  <li class="tank-acc__recovery-list-item">
+                    <p class="tank-acc__text">
+                      Привяжите сотовый телефон, используя личный кабинет, когда зайдёте на аккаунт
+                    </p>
+                  </li>
+                  <li class="tank-acc__recovery-list-item">
+                    <p class="tank-acc__text">
+                      Измените пароль и секретный вопрос на почте
+                    </p>
+                  </li>
+                  <li class="tank-acc__recovery-list-item">
+                    <p class="tank-acc__text">
+                      Привяжите телефон, укажите дополнительный e-mail на почте
+                    </p>
+                  </li>
+                </ul>
+                <a class="tank-acc__support" href="#">
+                  <svg class="icon-24">
+                    <use xlink:href="img/sprite.svg#support"></use>
+                  </svg>
+                  Техподдрежка для клиентов
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    @include("partials/footer.html")
+    @include("partials/modals.html")
+  </div>
+</body>
+
+</html>
